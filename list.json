@@ -1,0 +1,283 @@
+[
+    {
+        "image":"https://storage.googleapis.com/afs-prod/media/1e04103d41a0423c85de6ce7d5355229/3000.jpeg",
+        "name":"Alex Jones",
+        "banned":[
+            {
+                "name":"Facebook",
+                "logo":"fab fa-facebook-square"
+            },
+            {
+                "name":"Youtube",
+                "logo":"fab fa-youtube"
+            },
+            {
+                "name":"instagram",
+                "logo":"fab fa-instagram"
+            },
+            {
+                "name":"twitter",
+                "logo":"fab fa-twitter"
+            },
+            {
+                "name":"paypal",
+                "logo":"fab fa-paypal"
+            }
+        ],
+        "available":[
+            {
+                "name":"InfoWars.com",
+                "logo":"",
+                "link":"https://www.infowars.com"
+            },
+            {
+                "name":"Gab (@RealAlexJone)",
+                "logo":"",
+                "link":"https://gab.com/RealAlexJones"
+            },
+            {
+                "name":"instagram",
+                "logo":"fab fa-instagram",
+                "link":"https://www.instagram.com/acumia/"
+            }
+        ]
+    },
+    {
+        "image":"",
+        "name":"Anthony Cumia",
+        "banned":[
+            {
+                "name":"twitter",
+                "logo":"fab fa-twitter"
+            }
+        ],
+        "available":[
+            {
+                "name":"CompoundMedia.com",
+                "logo":"",
+                "link":"https://www.compoundmedia.com/"
+            },
+            {
+                "name":"instagram",
+                "logo":"fab fa-instagram",
+                "link":"https://www.instagram.com/acumia/"
+            }
+        ]
+    },
+    {
+        "image":"",
+        "name":"Faith Goldy",
+        "banned":[
+            {
+                "name":"facebook",
+                "logo":"fab fa-facebook-square"
+            },
+            {
+                "name":"instagram",
+                "logo":"fab fa-instagram"
+            }
+        ],
+        "available":[
+            {
+                "name":"YouTube",
+                "logo":"fab fa-youtube",
+                "link":"https://www.youtube.com/channel/UClMWnUHbxJKJLUgloN1mPUA"
+            },
+            {
+                "name":"twitter",
+                "logo":"fab fa-twitter",
+                "link":"https://twitter.com/FaithGoldy"
+            },
+            {
+                "name":"telegram",
+                "logo":"fab fa-telegram-plane",
+                "link":"https://t.me/FaithGoldy"
+            }
+        ]
+    },
+    {
+        "image":"",
+        "name":"Paul Joseph Watson",
+        "banned":[
+            {
+                "name":"facebook",
+                "logo":"fab fa-facebook-square"
+            },
+            {
+                "name":"instagram",
+                "logo":"fab fa-instagram"
+            }
+        ],
+        "available":[
+            {
+                "name":"Minds",
+                "logo":"",
+                "link":"https://www.minds.com/PaulJosephWatson/"
+            },
+            {
+                "name":"Gab",
+                "logo":"",
+                "link":"https://gab.com/RealAlexJones"
+            },
+            {
+                "name":"Bitchute",
+                "logo":"",
+                "link":"https://www.bitchute.com/channel/pauljosephwatson/"
+            },
+            {
+                "name":"Youtube",
+                "logo":"fab fa-youtube",
+                "link":"https://www.youtube.com/user/PrisonPlanetLive"
+            },
+            {
+                "name":"twitter",
+                "logo":"fab fa-twitter",
+                "link":"https://twitter.com/PrisonPlanet"
+            },
+            {
+                "name":"telegram",
+                "logo":"fab fa-telegram-plane",
+                "link":"https://t.me/pjwnews"
+            }
+
+        ]
+    },
+    {
+        "image":"",
+        "name":"Alex Jones",
+        "banned":[
+            {
+                "name":"facebook",
+                "logo":"fab fa-facebook-square"
+            },
+            {
+                "name":"youtube",
+                "logo":"fab fa-youtube"
+            },
+            {
+                "name":"instagram",
+                "logo":"fab fa-instagram"
+            },
+            {
+                "name":"twitter",
+                "logo":"fab fa-twitter"
+            },
+            {
+                "name":"paypal",
+                "logo":"fab fa-paypal"
+            }
+        ],
+        "available":[
+            {
+                "name":"InfoWars.com",
+                "logo":"",
+                "link":"https://www.infowars.com"
+            },
+            {
+                "name":"Gab (@RealAlexJone)",
+                "logo":"",
+                "link":"https://gab.com/RealAlexJones"
+            }
+        ]
+    },
+    {
+        "image":"",
+        "name":"Anthony Cumia",
+        "banned":[
+            {
+                "name":"twitter",
+                "logo":"fab fa-twitter"
+            }
+        ],
+        "available":[
+            {
+                "name":"CompoundMedia.com",
+                "logo":"",
+                "link":"https://www.compoundmedia.com/"
+            },
+            {
+                "name":"instagram",
+                "logo":"fab fa-instagram",
+                "link":"https://www.instagram.com/acumia/"
+            }
+        ]
+    },
+    {
+        "image":"",
+        "name":"Faith Goldy",
+        "banned":[
+            {
+                "name":"facebook",
+                "logo":"fab fa-facebook-square"
+            },
+            {
+                "name":"instagram",
+                "logo":"fab fa-instagram"
+            }
+        ],
+        "available":[
+            {
+                "name":"YouTube",
+                "logo":"",
+                "link":"https://www.youtube.com/channel/UClMWnUHbxJKJLUgloN1mPUA"
+            },
+            {
+                "name":"twitter",
+                "logo":"fab fa-twitter",
+                "link":"https://twitter.com/FaithGoldy"
+            },
+            {
+                "name":"telegram",
+                "logo":"fab fa-telegram-plane",
+                "link":"https://t.me/FaithGoldy"
+            }
+        ]
+    },
+    {
+        "image":"",
+        "name":"Paul Joseph Watson",
+        "banned":[
+            {
+                "name":"facebook",
+                "logo":"fab fa-facebook-square"
+            },
+            {
+                "name":"instagram",
+                "logo":"fab fa-instagram"
+            }
+        ],
+        "available":[
+            {
+                "name":"Minds",
+                "logo":"",
+                "link":"https://www.minds.com/PaulJosephWatson/"
+            },
+            {
+                "name":"Gab",
+                "logo":"",
+                "link":"https://gab.com/RealAlexJones"
+            },
+            {
+                "name":"Bitchute",
+                "logo":"",
+                "link":"https://www.bitchute.com/channel/pauljosephwatson/"
+            },
+            {
+                "name":"youtube",
+                "logo":"fab fa-youtube",
+                "link":"https://www.youtube.com/user/PrisonPlanetLive"
+            },
+            {
+                "name":"twitter",
+                "logo":"fab fa-twitter",
+                "link":"https://twitter.com/PrisonPlanet"
+            },
+            {
+                "name":"telegram",
+                "logo":"fab fa-telegram-plane",
+                "link":"https://t.me/pjwnews"
+            }
+
+        ]
+    }
+]

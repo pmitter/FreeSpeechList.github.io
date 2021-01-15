@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Free Speech List - List of Banned Personalities on Internet</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="#"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!--LOGOS Link-->
+  <script src="https://kit.fontawesome.com/c999d551de.js" crossorigin="anonymous"></script>
+
+<!--Bootstrap 3.4 CDN Call-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<!--Bootstrap 4.3 CDN Call-->  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+  <style>
+      /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+      }
+      
+      /* Add a gray background color and some padding to the footer */
+    footer {
+        background-color: #f2f2f2;
+        padding: 25px;
+      }
+  
+    #card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    
+      }
+  
+    #a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+      }
+  </style>
+ 
+</head>
+
+<body>
+  
+  <!--Nav Bar-->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">FreeSpeechList.com</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">FAQ</a></li>
+          <!--<li><a href="stats.html">Stats</a></li>-->
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="stats.html"><i class="fas fa-chart-line"></i> Stats</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+    <div class="container text-center">
+      <h1><span style="color: #a0a2a5">Censored from online discourse:</span> 13</h1>      
+    </div>
+    <p>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-4">
+              Banned from Twitter:
+              <p><strong>10</strong></p>
+            </div>
+            <div class="col-sm-4">
+              Banned from Facebook:
+             <p><strong>8</strong></p>
+            </div>
+            <div class="col-sm-4">
+              Banned from Instagram:
+            <p><strong>8</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+     </div> 
+     </p> 
+  </div>
+   
+  <div class="container-fluid bg-3 text-center" id="people-list">
+      
+  </div>
+
+  <br><br>
+  <footer class="container-fluid text-center">
+  <div class="row">
+    <!--Left Side-->    
+    <div class="col-sm-6">
+    Made for the internet
+    </div>
+    
+    <!--Right Side-->
+    <div class="col-sm-6">
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
+    </div>
+  </div>
+  </footer>
+
+</body>
+</html>
+
+<script>
+   $(document).ready(function(){
+    $.getJSON("./list.json",function(data){
+       var people_list ='';
+       var point=0;
+       var rows = (data.length)%3==0 ? Math.trunc(data.length/3) : Math.trunc(data.length/3)+1;
+       console.log(rows);
+       for(let i=1;i<=rows;i++)
+       {
+         console.log("Row="+i);
+         people_list+='<div class="row">';
+         let count=1;
+         while(count<=3 && point<data.length)
+         {
+           people_list+='<div class="col-sm-4 mb-2"   style="margin-top: 40px;">';
+            people_list+='<div id="card" class="card">';
+              //iMAGE
+              console.log("Image="+data[point].image);
+              people_list+='<img src="'+data[point].image+'" alt="John" style="width:100%">';
+              people_list+='<div class="container-fluid">';
+                people_list+='<br>';
+                //Name
+                people_list+='<p style="text-align: center; font-size: 27px; font-family: arial; font-weight: bold;">'+data[point].name+'</p>';
+                people_list+='<hr>';
+                //Banned From
+                people_list+='<p id="title" class="title" style="font-size: 25px;"><i class="fas fa-times-circle" style="color: red;"></i> Banned from:</p>';
+                people_list+='<p align="center;">';
+                  //List of banned websites
+                  console.log("Length of Banned="+(data[point].banned).length);
+                  for(let j=0;j<(data[point].banned).length;j++){
+                    if(j==((data[point].banned).length-1))
+                    {
+                      people_list+='<i class="'+data[point].banned[j].logo+'" style="font-size: 23px;"></i>';
+                    }
+                    else{
+                      people_list+='<i class="'+data[point].banned[j].logo+'" style="font-size: 23px;">&nbsp; &nbsp;</i>';
+                    }
+                   }
+                people_list+='</p>';
+                people_list+='<hr>';
+                people_list+='<p id="title" class="title" style="font-size: 25px; font-weight: bold;"><i class="fas fa-check-circle" style="color: green;"></i> Currently on:</p>';
+                people_list+='<p align="center;">';
+                  var without_logo='<p style="font-size: 23px;">';
+                  var with_logo='<p>';
+                  for(let j=0;j<(data[point].available).length;j++){
+                    if(data[point].available[j].logo==''){
+                      without_logo+='<a href="'+data[point].available[j].link+'" target="_blank" style="font-weight: bold;">'+data[point].available[j].name+'</a>,';
+                    }
+                    else{
+                      with_logo+='<a href="'+data[point].available[j].link+'" target="_blank"><i class="'+data[point].available[j].logo+'"style="font-size: 23px;"></i></a><strong style="font-size: 23px;"> &nbsp </strong>&nbsp;'
+                    }
+                  }
+                  //without_logo+=without_logo.slice(0,-1);
+                  without_logo=without_logo.slice(0,-1)+'</p>';
+                  with_logo=with_logo.slice(0,-49)+'</p>';
+                  console.log("With Logo ="+with_logo);
+                  people_list+=without_logo;
+                  people_list+=with_logo;
+                people_list+='</p>';
+                people_list+='<br>';  
+              people_list+='</div>';
+            people_list+='</div>';
+           people_list+='</div>';
+
+           console.log("Count="+(count++)+" Point="+(point++));
+         }
+        people_list+='</div>';
+       }
+       $('#people-list').append(people_list);
+     })
+  })
+</script>

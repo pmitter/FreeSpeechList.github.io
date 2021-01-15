@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FreeSpeechList - List of Banned Personalities on Internet</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="#"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!--LOGOS Link-->
+<script src="https://kit.fontawesome.com/c999d551de.js" crossorigin="anonymous"></script>
+
+<!--Bootstrap 3.4 CDN Call-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<!--Bootstrap 4.3 CDN Call-->  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<style>
+  /* Remove the navbar's default margin-bottom and rounded borders */ 
+  .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+   footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    } 
+</style>
+
+
+</head>
+ <body>
+   
+ <!--Nav Bar-->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="index.html">FreeSpeechList.com</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li class="active"><a href="stats.html">Stats</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="donate.html"><i class="fas fa-hand-holding-usd"></i> Donate</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+<!--Actual Content-->
+<!--1st PART-->      
+  <div class="container-fluid" style="text-align: center; padding-bottom: 20px; padding-top: 10px;"> 
+      <h1 style="font-weight: bold;"><u>Most suspensions by a website</u>:<h1>
+  </div>
+
+
+<!--SUSPENSION TABLE-->
+  <div class="container-fluid">
+    
+      <div class="row">
+          <div class="col-sm-2"></div>
+
+  <!--TABLE-->      
+          <div class="col-sm-8 table-responsive">
+          <table class="table table-striped" style="font-size: 18px;">
+                    <thead>
+                      <tr>
+                        <th>Ranking</th>
+                        <th>Website Name</th>
+                        <th>Suspended</th>
+                      </tr>
+                    </thead>
+                    <tbody id="bannedTable">
+                      
+                    </tbody>
+          </table>
+          </div>
+  
+
+
+         <div class="col-sm-2"> </div>
+  
+      </div>
+
+      <br>
+      <hr>
+      <br>
+
+  </div>
+
+<!--2nd PART-->
+
+ <div class="container-fluid" style="text-align: center; padding-bottom: 20px; padding-top: 10px;"> 
+      <h1 style="font-weight: bold;"><u>Most open to controversial opinions</u>:<h1>
+  </div>
+
+
+<!--FREE SPEECH TABLE-->
+  <div class="container-fluid">
+    
+      <div class="row">
+          <div class="col-sm-2"></div>
+
+  <!--TABLE-->      
+          <div class="col-sm-8 table-responsive">
+          <table class="table table-striped" style="font-size: 18px;">
+                    <thead>
+                      <tr>
+                        <th>Ranking</th>
+                        <th>Website Name</th>
+                        <th>Allowing</th>
+                      </tr>
+                    </thead>
+                    <tbody id="availTable">
+                      
+                    </tbody>
+          </table>
+          </div>
+  
+
+
+         <div class="col-sm-2"> </div>
+  
+      </div>
+
+      <br>
+      <hr>
+      <br>
+
+  </div>
+
+
+
+
+
+<!--Footer-->
+    <footer class="container-fluid text-center">
+      <div class="row">
+    <!--Left Side-->    
+        <div class="col-sm-5">
+        Made with for the internet
+        </div>
+        <div class="col-sm-2"><br></div>
+    <!--Right Side-->
+        <div class="col-sm-5">
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+</body>
+</html>
+
+<script>
+  $(document).ready(function() {
+    $.getJSON("list.json",function (data) {
+      console.log(data);
+      var bannedList = [];
+      var availList = [];
+      for(let i=0;i<data.length;i++)
+      {
+        // Operation for banned list
+        for(let j=0;j<data[i].banned.length;j++)
+        {
+          if((bannedList.find(record => record.name === data[i].banned[j].name))!=undefined){
+            for(let k=0;k<bannedList.length;k++)
+            {
+              if(bannedList[k].name!= data[i].banned[j].name)
+                continue;
+              else{
+                bannedList[k].count+=1;
+                break;
+              }
+            }
+          }else{
+            bannedList.push({name:data[i].banned[j].name,logo:data[i].banned[j].logo,count:1});
+          }
+        }
+
+        // Operation for availList
+        for(let j=0;j<data[i].available.length;j++)
+        {
+          if((availList.find(record => record.name === data[i].available[j].name))!=undefined){
+            for(let k=0;k<availList.length;k++)
+            {
+              if(availList[k].name!= data[i].available[j].name)
+                continue;
+              else{
+                availList[k].count+=1;
+                break;
+              }
+            }
+          }else{
+            console.log("False");
+            availList.push({name:data[i].available[j].name,logo:data[i].available[j].logo,count:1});
+          }
+        }
+      }
+      //Sorting bannedList & availList
+
+      bannedList.sort(function (a,b){
+        return b.count - a.count;
+      })
+
+      availList.sort(function (a,b){
+        return b.count - a.count;
+      })
+      //Checking the count and then displaying in table
+
+      var tableData ='';
+      for(let i=0;i<bannedList.length;i++){
+        tableData+='<tr>';
+          tableData+='<td>'+(i+1)+'</td>';
+          tableData+='<td><i class="'+bannedList[i].logo+'"></i>&nbsp;'+bannedList[i].name+'</td>';
+          tableData+='<td>'+bannedList[i].count+'</td>';
+        tableData+='</tr>';
+      }
+      $('#bannedTable').append(tableData);
+
+      tableData='';
+      for(let i=0;i<availList.length;i++){
+        tableData+='<tr>';
+          tableData+='<td>'+(i+1)+'</td>';
+          tableData+='<td><i class="'+availList[i].logo+'"></i>&nbsp;'+availList[i].name+'</td>';
+          tableData+='<td>'+availList[i].count+'</td>';
+        tableData+='</tr>';
+      }
+      $('#availTable').append(tableData);
+    })
+  })
+</script>
