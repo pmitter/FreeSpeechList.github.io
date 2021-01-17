@@ -1,5 +1,4 @@
-$.getJSON('../list.json',function (data) {
-    console.log(data);
+$.getJSON('list.json',function (data) {
     var bannedList = [];
     var availList = [];
     for(let i=0;i<data.length;i++)
@@ -25,7 +24,6 @@ $.getJSON('../list.json',function (data) {
       // Operation for availList
       for(let j=0;j<data[i].available.length;j++)
       {
-        console.log(data[i].available[j].personal)
         if((availList.find(record => (record.name === data[i].available[j].name)))!=undefined){
           for(let k=0;k<availList.length;k++)
           {
@@ -37,7 +35,6 @@ $.getJSON('../list.json',function (data) {
             }
           }
         }else{
-          console.log("False");
           availList.push({name:data[i].available[j].name,logo:data[i].available[j].logo,count:1,personal:data[i].available[j].personal});
         }
       }

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/png" href="#"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../includes/style.css">
+  <link rel="stylesheet" href="includes/style.css">
 
 <!--LOGOS Link-->
 <script src="https://kit.fontawesome.com/c999d551de.js" crossorigin="anonymous"></script>
@@ -19,6 +19,23 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   
+
+<style>
+   html {
+    position: relative;
+    min-height: 100%;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+</style>
 </head>
  <body>
    
@@ -100,8 +117,8 @@
 
 <script>
 $(document).ready(function() {
-$("nav").load('../includes/navbar.html');
-$("footer").load('../includes/footer.html');
-$.getScript('../includes/stats.js');
+$("nav").load('includes/navbar.html');
+$("footer").load('includes/footer.html');
+$.getScript('includes/stats.js');
 })
 </script>
