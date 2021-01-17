@@ -1,281 +1,416 @@
 [
     {
-        "image":"https://storage.googleapis.com/afs-prod/media/1e04103d41a0423c85de6ce7d5355229/3000.jpeg",
+        "image":"https://static.infowars.com/about/alex-jones-image-4.jpg",
         "name":"Alex Jones",
+        "banned":[
+            {
+                "name":"Youtube",
+                "logo":"fab fa-youtube"
+            },
+            {
+                "name":"Facebook",
+                "logo":"fab fa-facebook-square"
+            },
+            {
+                "name":"Instagram",
+                "logo":"fab fa-instagram"
+            },
+            {
+                "name":"Twitter",
+                "logo":"fab fa-twitter"
+            }
+        ],
+        "available":[
+            {
+                "name":"InfoWars.com",
+                "logo":"",
+                "personal":1,
+                "link":"https://www.infowars.com"
+            },
+            {
+                "name":"Gab",
+                "logo":"",
+                "personal":0,
+                "link":"https://gab.com/RealAlexJones"
+            }
+        ]
+    },
+    {
+        "image":"https://media4.s-nbcnews.com/j/newscms/2019_13/2799041/190326-donald-trump-mc-1155_0dfd373a458b9638bad47c9e5581a314.fit-760w.JPG",
+        "name":"Donald Trump",
         "banned":[
             {
                 "name":"Facebook",
                 "logo":"fab fa-facebook-square"
             },
             {
+                "name":"Instagram",
+                "logo":"fab fa-instagram"
+            },
+            {
+                "name":"Twitter",
+                "logo":"fab fa-twitter"
+            },
+            {
+                "name":"Snapchat",
+                "logo":"fab fa-snapchat-square"
+            },
+            {
+                "name":"Twitch",
+                "logo":"fab fa-twitch"
+            },
+            {
+                "name":"Shopify",
+                "logo":"fab fa-shopify"
+            },
+            {
+                "name":"TikTok",
+                "logo":"fab fa-tiktok"
+            },
+            {
+                "name":"Discord",
+                "logo":"fab fa-discord"
+            }
+
+        ],
+        "available":[
+            {
+                "name":"DonaldJTrump.com",
+                "logo":"",
+                "personal":1,
+                "link":"https://www.donaldjtrump.com/"
+            }
+        ]
+    },
+    {
+        "image":"https://static.hollywoodreporter.com/sites/default/files/2017/04/gettyimages-513650708_-_h_2017-928x523.jpg",
+        "name":"Gavin McInnes",
+        "banned":[
+            {
                 "name":"Youtube",
                 "logo":"fab fa-youtube"
             },
             {
-                "name":"instagram",
-                "logo":"fab fa-instagram"
-            },
-            {
-                "name":"twitter",
-                "logo":"fab fa-twitter"
-            },
-            {
-                "name":"paypal",
-                "logo":"fab fa-paypal"
-            }
-        ],
-        "available":[
-            {
-                "name":"InfoWars.com",
-                "logo":"",
-                "link":"https://www.infowars.com"
-            },
-            {
-                "name":"Gab (@RealAlexJone)",
-                "logo":"",
-                "link":"https://gab.com/RealAlexJones"
-            },
-            {
-                "name":"instagram",
-                "logo":"fab fa-instagram",
-                "link":"https://www.instagram.com/acumia/"
-            }
-        ]
-    },
-    {
-        "image":"",
-        "name":"Anthony Cumia",
-        "banned":[
-            {
-                "name":"twitter",
-                "logo":"fab fa-twitter"
-            }
-        ],
-        "available":[
-            {
-                "name":"CompoundMedia.com",
-                "logo":"",
-                "link":"https://www.compoundmedia.com/"
-            },
-            {
-                "name":"instagram",
-                "logo":"fab fa-instagram",
-                "link":"https://www.instagram.com/acumia/"
-            }
-        ]
-    },
-    {
-        "image":"",
-        "name":"Faith Goldy",
-        "banned":[
-            {
-                "name":"facebook",
+                "name":"Facebook",
                 "logo":"fab fa-facebook-square"
             },
             {
-                "name":"instagram",
+                "name":"Instagram",
                 "logo":"fab fa-instagram"
+            },
+            {
+                "name":"Twitter",
+                "logo":"fab fa-twitter"
             }
         ],
         "available":[
             {
-                "name":"YouTube",
-                "logo":"fab fa-youtube",
-                "link":"https://www.youtube.com/channel/UClMWnUHbxJKJLUgloN1mPUA"
+                "name":"Censored.tv",
+                "logo":"",
+                "personal":1,
+                "link":"https://censored.tv/"
             },
             {
-                "name":"twitter",
-                "logo":"fab fa-twitter",
-                "link":"https://twitter.com/FaithGoldy"
+                "name":"Apple",
+                "logo":"fab fa-apple",
+                "personal":0,
+                "link":"https://podcasts.apple.com/us/podcast/get-off-my-lawn-podcast-w-gavin-mcinnes/id1309316469"
             },
             {
-                "name":"telegram",
+                "name":"Telegram",
                 "logo":"fab fa-telegram-plane",
-                "link":"https://t.me/FaithGoldy"
+                "personal":0,
+                "link":"https://t.me/RealGavinMcInnes"
             }
         ]
     },
     {
-        "image":"",
-        "name":"Paul Joseph Watson",
+        "image":"https://nypost.com/wp-content/uploads/sites/2/2020/04/laura-loomer-2.jpg?quality=90&strip=all&w=1024",
+        "name":"Laura Loomer",
         "banned":[
             {
-                "name":"facebook",
+                "name":"Facebook",
                 "logo":"fab fa-facebook-square"
             },
             {
-                "name":"instagram",
+                "name":"Instagram",
                 "logo":"fab fa-instagram"
+            },
+            {
+                "name":"Twitter",
+                "logo":"fab fa-twitter"
+            },
+            {
+                "name":"Paypal",
+                "logo":"fab fa-paypal"
+            },
+            {
+                "name":"Uber",
+                "logo":"fab fa-uber"
+            },
+            {
+                "name":"Lyft",
+                "logo":"fab fa-lyft"
+            },
+            {
+                "name":"Medium",
+                "logo":"fab fa-medium"
             }
         ],
         "available":[
             {
-                "name":"Minds",
+                "name":"Loomered.com",
                 "logo":"",
-                "link":"https://www.minds.com/PaulJosephWatson/"
+                "personal":1,
+                "link":"https://loomered.com/"
             },
             {
                 "name":"Gab",
                 "logo":"",
-                "link":"https://gab.com/RealAlexJones"
+                "personal":0,
+                "link":"https://gab.com/lauraloomer"
             },
             {
-                "name":"Bitchute",
-                "logo":"",
-                "link":"https://www.bitchute.com/channel/pauljosephwatson/"
-            },
-            {
-                "name":"Youtube",
+                "name":"YouTube",
                 "logo":"fab fa-youtube",
-                "link":"https://www.youtube.com/user/PrisonPlanetLive"
+                "personal":0,
+                "link":"https://www.youtube.com/c/LauraLoomered"
             },
             {
-                "name":"twitter",
-                "logo":"fab fa-twitter",
-                "link":"https://twitter.com/PrisonPlanet"
-            },
-            {
-                "name":"telegram",
+                "name":"Telegram",
                 "logo":"fab fa-telegram-plane",
-                "link":"https://t.me/pjwnews"
+                "personal":0,
+                "link":"https://t.me/loomeredofficial"
             }
 
         ]
     },
     {
-        "image":"",
-        "name":"Alex Jones",
+        "image":"https://www.finalcall.com/artman/uploads/6/Minister-Farrakhan_05-14-2019.jpg",
+        "name":"Louis Farrakhan",
         "banned":[
             {
-                "name":"facebook",
+                "name":"Facebook",
                 "logo":"fab fa-facebook-square"
             },
             {
-                "name":"youtube",
-                "logo":"fab fa-youtube"
-            },
-            {
-                "name":"instagram",
+                "name":"Instagram",
                 "logo":"fab fa-instagram"
-            },
-            {
-                "name":"twitter",
-                "logo":"fab fa-twitter"
-            },
-            {
-                "name":"paypal",
-                "logo":"fab fa-paypal"
             }
         ],
         "available":[
             {
-                "name":"InfoWars.com",
+                "name":"NOI.org",
                 "logo":"",
-                "link":"https://www.infowars.com"
+                "personal":1,
+                "link":"https://www.noi.org/"
             },
             {
-                "name":"Gab (@RealAlexJone)",
-                "logo":"",
-                "link":"https://gab.com/RealAlexJones"
+                "name":"Twitter",
+                "logo":"fab fa-twitter",
+                "personal":0,
+                "link":"https://twitter.com/LouisFarrakhan"
             }
         ]
     },
     {
-        "image":"",
-        "name":"Anthony Cumia",
+        "image":"https://i.guim.co.uk/img/media/5a7f2cc35a5b6015165fced3878a551538a63be0/5_171_1323_793/master/1323.jpg?width=1200&quality=85&auto=format&fit=max&s=572280cea7fba6ea5be7dab2d8ecd647",
+        "name":"Milo Yiannopoulos",
         "banned":[
             {
-                "name":"twitter",
+                "name":"Facebook",
+                "logo":"fab fa-facebook-square"
+            },
+            {
+                "name":"Instagram",
+                "logo":"fab fa-instagram"
+            },
+            {
+                "name":"Twitter",
                 "logo":"fab fa-twitter"
+            },
+            {
+                "name":"Paypal",
+                "logo":"fab fa-paypal"
+            },
+            {
+                "name":"Shopify",
+                "logo":"fab fa-shopify"
+            },
+            {
+                "name":"Patreon",
+                "logo":"fab fa-patreon"
+            },
+            {
+                "name":"Tumblr",
+                "logo":"fab fa-tumblr-square"
             }
         ],
         "available":[
             {
-                "name":"CompoundMedia.com",
+                "name":"Milo.net",
                 "logo":"",
-                "link":"https://www.compoundmedia.com/"
+                "personal":1,
+                "link":"https://milo.net/"
             },
             {
-                "name":"instagram",
-                "logo":"fab fa-instagram",
+                "name":"Gab",
+                "logo":"",
+                "personal":0,
+                "link":"https://gab.com/m"
+            },
+            {
+                "name":"YouTube",
+                "logo":"fab fa-youtube",
+                "personal":0,
+                "link":"https://www.youtube.com/user/yiannopoulosm"
+            },
+            {
+                "name":"Telegram",
+                "logo":"fab fa-telegram-plane",
+                "personal":0,
                 "link":"https://www.instagram.com/acumia/"
             }
         ]
     },
     {
-        "image":"",
-        "name":"Faith Goldy",
+        "image":"https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/i58bv-46HH5PPQF6K-Full-Image_GalleryBackground-en-US-1576132517878._RI_.jpg",
+        "name":"Owen Benjamin",
         "banned":[
-            {
-                "name":"facebook",
-                "logo":"fab fa-facebook-square"
-            },
-            {
-                "name":"instagram",
-                "logo":"fab fa-instagram"
-            }
-        ],
-        "available":[
             {
                 "name":"YouTube",
-                "logo":"",
-                "link":"https://www.youtube.com/channel/UClMWnUHbxJKJLUgloN1mPUA"
+                "logo":"fab fa-youtube"
             },
             {
-                "name":"twitter",
-                "logo":"fab fa-twitter",
-                "link":"https://twitter.com/FaithGoldy"
-            },
-            {
-                "name":"telegram",
-                "logo":"fab fa-telegram-plane",
-                "link":"https://t.me/FaithGoldy"
-            }
-        ]
-    },
-    {
-        "image":"",
-        "name":"Paul Joseph Watson",
-        "banned":[
-            {
-                "name":"facebook",
+                "name":"Facebook",
                 "logo":"fab fa-facebook-square"
             },
             {
-                "name":"instagram",
+                "name":"Instagram",
                 "logo":"fab fa-instagram"
+            },
+            {
+                "name":"Twitter",
+                "logo":"fab fa-twitter"
+            },
+            {
+                "name":"Paypal",
+                "logo":"fab fa-paypal"
+            },
+            {
+                "name":"Patreon",
+                "logo":"fab fa-patreon"
             }
         ],
         "available":[
-            {
-                "name":"Minds",
-                "logo":"",
-                "link":"https://www.minds.com/PaulJosephWatson/"
-            },
             {
                 "name":"Gab",
                 "logo":"",
-                "link":"https://gab.com/RealAlexJones"
+                "personal":0,
+                "link":"https://gab.com/OwenBenjamin"
             },
             {
                 "name":"Bitchute",
                 "logo":"",
-                "link":"https://www.bitchute.com/channel/pauljosephwatson/"
+                "personal":0,
+                "link":"https://www.bitchute.com/channel/IqkVCnIJKhPk/"
             },
             {
-                "name":"youtube",
+                "name":"dlive",
+                "logo":"",
+                "personal":0,
+                "link":"https://dlive.tv/owenbenjamincomedy"
+            }
+        ]
+    },
+    {
+        "image":"https://www.nationalobserver.com/sites/nationalobserver.com/files/img/2019/05/06/screenshot_2019-05-06_at_4.53.34_pm.png",
+        "name":"Paul Joseph Watson",
+        "banned":[
+            {
+                "name":"Facebook",
+                "logo":"fab fa-facebook-square"
+            },
+            {
+                "name":"Instagram",
+                "logo":"fab fa-instagram"
+            }
+        ],
+        "available":[
+            {
+                "name":"Gab",
+                "logo":"",
+                "personal":0,
+                "link":"https://gab.com/prisonplanet"
+            },
+            {
+                "name":"Bitchute",
+                "logo":"",
+                "personal":0,
+                "link":"https://www.bitchute.com/channel/9WF6N0ecQ55u/"
+            },
+            {
+                "name":"YouTube",
                 "logo":"fab fa-youtube",
+                "personal":0,
                 "link":"https://www.youtube.com/user/PrisonPlanetLive"
             },
             {
-                "name":"twitter",
-                "logo":"fab fa-twitter",
-                "link":"https://twitter.com/PrisonPlanet"
+                "name":"Telegram",
+                "logo":"fab fa-telegram-plane",
+                "personal":0,
+                "link":"https://t.me/pjwnews"
             },
             {
-                "name":"telegram",
+                "name":"Twitter",
+                "logo":"fab fa-twitter",
+                "personal":0,
+                "link":"https://twitter.com/PrisonPlanet"
+            }
+
+        ]
+    },
+    {
+        "image":"https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F9b3967e2f99a43c0a3859676d2eef6d6%2F960x0.jpg%3Ffit%3Dscale",
+        "name":"Tommy Robinson",
+        "banned":[
+            {
+                "name":"YouTube",
+                "logo":"fab fa-youtube"
+            },
+            {
+                "name":"Facebook",
+                "logo":"fab fa-facebook-square"
+            },
+            {
+                "name":"Instagram",
+                "logo":"fab fa-instagram"
+            },
+            {
+                "name":"TikTok",
+                "logo":"fab fa-tiktok"
+            },
+            {
+                "name":"Snapchat",
+                "logo":"fab fa-snapchat-square"
+            },
+            {
+                "name":"Twitter",
+                "logo":"fab fa-twitter"
+            }
+        ],
+        "available":[
+            {
+                "name":"Bitchute",
+                "logo":"",
+                "personal":0,
+                "link":"https://www.bitchute.com/channel/vztVBAlS9Iar/"
+            },
+            {
+                "name":"Telegram",
                 "logo":"fab fa-telegram-plane",
-                "link":"https://t.me/pjwnews"
+                "personal":0,
+                "link":"https://t.me/TommyRobinsonNews"
             }
 
         ]
