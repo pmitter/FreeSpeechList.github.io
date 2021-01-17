@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FreeSpeechList - List of Banned Personalities on Internet</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="#"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../includes/style.css">
+
+<!--LOGOS Link-->
+<script src="https://kit.fontawesome.com/c999d551de.js" crossorigin="anonymous"></script>
+
+<!--Bootstrap 3.4 CDN Call-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<!--Bootstrap 4.3 CDN Call-->  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+</head>
+ <body>
+   
+ <!--Nav Bar-->
+    <nav class="navbar navbar-inverse">
+      
+    </nav>
+
+
+<!--Actual Content-->
+<!--1st PART-->      
+  <div class="container-fluid" style="text-align: center; padding-bottom: 20px; padding-top: 10px;"> 
+      <h1 style="font-weight: bold;"><u>Most suspensions by a website</u>:<h1>
+  </div>
+
+
+<!--SUSPENSION TABLE-->
+  <div class="container-fluid">
+    
+      <div class="row">
+          <div class="col-sm-2"></div>
+
+  <!--TABLE-->      
+          <div class="col-sm-8 table-responsive">
+          <table class="table table-striped" style="font-size: 18px;">
+                    <thead>
+                      <tr>
+                        <th>Ranking</th>
+                        <th>Website Name</th>
+                        <th>Suspended</th>
+                      </tr>
+                    </thead>
+                    <tbody id="bannedTable">
+                      
+                    </tbody>
+          </table>
+          </div>
+  
+
+
+         <div class="col-sm-2"> </div>
+  
+      </div>
+
+      <br>
+      <hr>
+      <br>
+
+  </div>
+
+<!--2nd PART-->
+
+ <div class="container-fluid" style="text-align: center; padding-bottom: 20px; padding-top: 10px;"> 
+      <h1 style="font-weight: bold;"><u>Most open to controversial opinions</u>:<h1>
+  </div>
+
+
+<!--FREE SPEECH TABLE-->
+  <div class="container-fluid">
+    
+      <div class="row">
+          <div class="col-sm-2"></div>
+
+  <!--TABLE-->      
+          <div class="col-sm-8 table-responsive">
+          <table class="table table-striped" style="font-size: 18px;">
+                    <thead>
+                      <tr>
+                        <th>Ranking</th>
+                        <th>Website Name</th>
+                        <th>Allowing</th>
+                      </tr>
+                    </thead>
+                    <tbody id="availTable">
+                      
+                    </tbody>
+          </table>
+          </div>
+  
+
+
+         <div class="col-sm-2"> </div>
+  
+      </div>
+
+      <br>
+      <hr>
+      <br>
+
+  </div>
+
+
+
+
+
+<!--Footer-->
+    <footer class="container-fluid text-center">
+      
+    </footer>
+</body>
+</html>
+
+<script>
+  $(document).ready(function() {
+    $("nav").load('../includes/navbar.html');
+    $("footer").load('../includes/footer.html');
+    $.getScript('../includes/stats.js');
+  })
+</script>

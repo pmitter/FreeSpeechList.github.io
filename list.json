@@ -24,13 +24,13 @@
             {
                 "name":"InfoWars.com",
                 "logo":"",
-                "personal":"1",
+                "personal":1,
                 "link":"https://www.infowars.com"
             },
             {
                 "name":"Gab",
                 "logo":"",
-                "personal":"0",
+                "personal":0,
                 "link":"https://gab.com/RealAlexJones"
             }
         ]
@@ -77,7 +77,7 @@
             {
                 "name":"DonaldJTrump.com",
                 "logo":"",
-                "personal":"1",
+                "personal":1,
                 "link":"https://www.donaldjtrump.com/"
             }
         ]
@@ -107,19 +107,19 @@
             {
                 "name":"Censored.tv",
                 "logo":"",
-                "personal":"1",
+                "personal":1,
                 "link":"https://censored.tv/"
             },
             {
                 "name":"Apple",
                 "logo":"fab fa-apple",
-                "personal":"0",
+                "personal":0,
                 "link":"https://podcasts.apple.com/us/podcast/get-off-my-lawn-podcast-w-gavin-mcinnes/id1309316469"
             },
             {
                 "name":"Telegram",
                 "logo":"fab fa-telegram-plane",
-                "personal":"0",
+                "personal":0,
                 "link":"https://t.me/RealGavinMcInnes"
             }
         ]
@@ -161,25 +161,25 @@
             {
                 "name":"Loomered.com",
                 "logo":"",
-                "personal":"1",
+                "personal":1,
                 "link":"https://loomered.com/"
             },
             {
                 "name":"Gab",
                 "logo":"",
-                "personal":"0",
+                "personal":0,
                 "link":"https://gab.com/lauraloomer"
             },
             {
                 "name":"YouTube",
                 "logo":"fab fa-youtube",
-                "personal":"0",
+                "personal":0,
                 "link":"https://www.youtube.com/c/LauraLoomered"
             },
             {
                 "name":"Telegram",
                 "logo":"fab fa-telegram-plane",
-                "personal":"0",
+                "personal":0,
                 "link":"https://t.me/loomeredofficial"
             }
 
@@ -202,13 +202,13 @@
             {
                 "name":"NOI.org",
                 "logo":"",
-                "personal":"1",
+                "personal":1,
                 "link":"https://www.noi.org/"
             },
             {
                 "name":"Twitter",
                 "logo":"fab fa-twitter",
-                "personal":"0",
+                "personal":0,
                 "link":"https://twitter.com/LouisFarrakhan"
             }
         ]
@@ -250,25 +250,25 @@
             {
                 "name":"Milo.net",
                 "logo":"",
-                "personal":"1",
+                "personal":1,
                 "link":"https://milo.net/"
             },
             {
                 "name":"Gab",
                 "logo":"",
-                "personal":"0",
+                "personal":0,
                 "link":"https://gab.com/m"
             },
             {
                 "name":"YouTube",
                 "logo":"fab fa-youtube",
-                "personal":"0",
+                "personal":0,
                 "link":"https://www.youtube.com/user/yiannopoulosm"
             },
             {
                 "name":"Telegram",
                 "logo":"fab fa-telegram-plane",
-                "personal":"0",
+                "personal":0,
                 "link":"https://www.instagram.com/acumia/"
             }
         ]
@@ -306,19 +306,19 @@
             {
                 "name":"Gab",
                 "logo":"",
-                "personal":"0",
+                "personal":0,
                 "link":"https://gab.com/OwenBenjamin"
             },
             {
                 "name":"Bitchute",
                 "logo":"",
-                "personal":"0",
+                "personal":0,
                 "link":"https://www.bitchute.com/channel/IqkVCnIJKhPk/"
             },
             {
                 "name":"dlive",
                 "logo":"",
-                "personal":"0",
+                "personal":0,
                 "link":"https://dlive.tv/owenbenjamincomedy"
             }
         ]
@@ -340,31 +340,31 @@
             {
                 "name":"Gab",
                 "logo":"",
-                "personal":"0",
+                "personal":0,
                 "link":"https://gab.com/prisonplanet"
             },
             {
                 "name":"Bitchute",
                 "logo":"",
-                "personal":"0",
+                "personal":0,
                 "link":"https://www.bitchute.com/channel/9WF6N0ecQ55u/"
             },
             {
                 "name":"YouTube",
                 "logo":"fab fa-youtube",
-                "personal":"0",
+                "personal":0,
                 "link":"https://www.youtube.com/user/PrisonPlanetLive"
             },
             {
                 "name":"Telegram",
                 "logo":"fab fa-telegram-plane",
-                "personal":"0",
+                "personal":0,
                 "link":"https://t.me/pjwnews"
             },
             {
                 "name":"Twitter",
                 "logo":"fab fa-twitter",
-                "personal":"0",
+                "personal":0,
                 "link":"https://twitter.com/PrisonPlanet"
             }
 
@@ -403,13 +403,13 @@
             {
                 "name":"Bitchute",
                 "logo":"",
-                "personal":"0",
+                "personal":0,
                 "link":"https://www.bitchute.com/channel/vztVBAlS9Iar/"
             },
             {
                 "name":"Telegram",
                 "logo":"fab fa-telegram-plane",
-                "personal":"0",
+                "personal":0,
                 "link":"https://t.me/TommyRobinsonNews"
             }
 
