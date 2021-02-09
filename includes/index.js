@@ -2,10 +2,10 @@ $.getJSON("./list.json",function(data){
     var people_list ='';
     var point=0;
     var rows = (data.length)%3==0 ? Math.trunc(data.length/3) : Math.trunc(data.length/3)+1;
-    console.log(rows);
+    //console.log(rows);
     for(let i=1;i<=rows;i++)
     {
-      console.log("Row="+i);
+      //console.log("Row="+i);
       people_list+='<div class="row">';
       let count=1;
       while(count<=3 && point<data.length)
@@ -13,7 +13,7 @@ $.getJSON("./list.json",function(data){
         people_list+='<div class="col-sm-4 mb-2"   style="margin-top: 40px;">';
          people_list+='<div id="card" class="card">';
            //iMAGE
-           console.log("Image="+data[point].image);
+           //console.log("Image="+data[point].image);
            people_list+='<img src="'+data[point].image+'" alt="John" style="width:100%">';
            people_list+='<div class="container-fluid">';
              people_list+='<br>';
@@ -24,7 +24,7 @@ $.getJSON("./list.json",function(data){
              people_list+='<p id="title" class="title" style="font-size: 25px;"><i class="fas fa-times-circle" style="color: red;"></i> Banned from:</p>';
              people_list+='<p align="center;">';
                //List of banned websites
-               console.log("Length of Banned="+(data[point].banned).length);
+               //console.log("Length of Banned="+(data[point].banned).length);
                for(let j=0;j<(data[point].banned).length;j++){
                  if(j==((data[point].banned).length-1))
                  {
@@ -51,7 +51,7 @@ $.getJSON("./list.json",function(data){
                //without_logo+=without_logo.slice(0,-1);
                without_logo=without_logo.slice(0,-7)+'</p>';
                with_logo=with_logo.slice(0,-49)+'</p>';
-               console.log("With Logo ="+with_logo);
+               //console.log("With Logo ="+with_logo);
                people_list+=without_logo;
                people_list+=with_logo;
              people_list+='</p>';
@@ -59,8 +59,9 @@ $.getJSON("./list.json",function(data){
            people_list+='</div>';
          people_list+='</div>';
         people_list+='</div>';
-
-        console.log("Count="+(count++)+" Point="+(point++));
+        count++;
+        point++;       
+        //console.log("Count="+(count++)+" Point="+(point++));
       }
      people_list+='</div>';
     }
